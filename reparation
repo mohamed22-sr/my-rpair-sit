@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إصلاح الإختراعات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background: url('hero.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      background-color: #1abc9c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #16a085;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .price {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .testimonial {
+      background-color: #e8f5e9;
+      padding: 1rem;
+      border-radius: 8px;
+      font-style: italic;
+      margin: 1rem 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Cairo';
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 1rem;
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #16a085;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .product {
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>مرحباً بك في موقع إصلاح الإختراعات</h1>
+    <p>نحن متخصصون في تطوير الإختراعات والمشاريع التقنية. اكتشف خدماتنا وابدأ رحلتك معنا نحو الابتكار.</p>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">المبيعات</a>
+    <a href="#">آراء العملاء</a>
+    <a href="#">تواصل معنا</a>
+  </nav>
+
+  <section>
+    <h2>المبيعات</h2>
+    <div class="products">
+      <div class="product">
+        <img src="washer1.jpg" alt="غسالة 1">
+        <div class="price">السعر: 1500 درهم</div>
+      </div>
+      <div class="product">
+        <img src="washer2.jpg" alt="غسالة 2">
+        <div class="price">السعر: 1800 درهم</div>
+      </div>
+      <div class="product">
+        <img src="washer3.jpg" alt="غسالة 3">
+        <div class="price">السعر: 2000 درهم</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>آراء العملاء</h2>
+    <div class="testimonial">
+      “خدمة ممتازة وأسعار معقولة. أنصح بهم بشدة!”
+      <br>– أحمد.
+    </div>
+  </section>
+
+  <section>
+    <h2>تواصل معنا</h2>
+    <form>
+      <input type="text" placeholder="الاسم">
+      <textarea placeholder="الرسالة" rows="5"></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 إصلاح الإختراعات - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
